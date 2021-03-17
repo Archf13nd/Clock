@@ -3,7 +3,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* width: fit-content; */
 }
 
 :root {
@@ -19,14 +18,19 @@ body {
 
   position: relative;
   display: flex;
-  flex: 0 1 calc(var(--radius) * 2);
+  /* flex: 0 1 calc(var(--radius) * 2); */
   justify-content: center;
   align-items: center;
-  height: calc(var(--radius) * 2);
+  /* height: calc(var(--radius) * 2); */
   width: calc(var(--radius) * 2);
   border-radius: 50%;
   background: var(--color-primary);
   overflow: hidden;
+}
+
+.container:after {
+  content: "";
+  padding-bottom: 100%;
 }
 
 .numbers {
