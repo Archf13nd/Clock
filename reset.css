@@ -1,0 +1,21 @@
+:root {
+  font-size: 50%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  line-height: 100%;
+}
