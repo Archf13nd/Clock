@@ -1,9 +1,9 @@
 body {
-  /* overflow-y: scroll; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* width: fit-content; */
 }
 
 :root {
@@ -19,6 +19,7 @@ body {
 
   position: relative;
   display: flex;
+  flex: 0 1 calc(var(--radius) * 2);
   justify-content: center;
   align-items: center;
   height: calc(var(--radius) * 2);

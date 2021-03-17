@@ -1,5 +1,5 @@
 // SIZE
-const radius = 400;
+const radius = 500;
 
 const container = document.getElementById("container");
 container.style.cssText = `--radius: ${radius}px`;
@@ -24,7 +24,7 @@ const handRotation = {
   },
   hour() {
     return (
-      (360 / 24) * new Date().getHours() -
+      (360 / 12) * new Date().getHours() -
       180 +
       (new Date().getMinutes() + 1) / 4
     );
