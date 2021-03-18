@@ -1,5 +1,5 @@
 // SIZE
-const radius = 400;
+const radius = 200;
 
 const container = document.getElementById("container");
 container.style.cssText = `--radius: ${radius}px`;
