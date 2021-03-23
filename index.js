@@ -10,7 +10,7 @@ container.style.fontSize = `${radius / 30}px`;
 let circleCount = 0;
 
 //Object with methods returning rotation for clock hand
-// Methods calulate rotation by diving 360 by number of steps (60 for seconds 12 for hours)
+// Methods calulate rotation by dividing 360 by number of steps (60 for seconds 12 for hours)
 // To create a smooth movement instead of typical "steps", a fraction of the distance between each "step" is calculated and added on.
 // 180 is subtracted to flip the clock over. This is to make it a lot easier to style with css and costs less code.
 const handRotation = {
