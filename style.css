@@ -1,3 +1,5 @@
+/* The --radius css variable is generated with Javascript. It will not be found here */
+
 body {
   display: flex;
   justify-content: center;
@@ -5,11 +7,8 @@ body {
   height: 100vh;
 }
 
-:root {
-}
-
 .container {
-  /* STYLES */
+  /* CLOCK COLOR SCHEME */
   --color-primary: rgb(0, 0, 0);
   --color-center: rgb(255, 255, 255);
   --color-second-hand: rgb(255, 255, 255);
@@ -18,10 +17,8 @@ body {
 
   position: relative;
   display: flex;
-  /* flex: 0 1 calc(var(--radius) * 2); */
   justify-content: center;
   align-items: center;
-  /* height: calc(var(--radius) * 2); */
   width: calc(var(--radius) * 2);
   border-radius: 50%;
   background: var(--color-primary);
@@ -43,6 +40,7 @@ body {
 }
 
 .number {
+  /* Determines the margin between the numbers of the clock and the clocks edge. */
   --offset: 3%;
   position: absolute;
   left: 50%;
@@ -101,6 +99,7 @@ body {
 }
 
 .circle {
+  /* --radius generated with Javascript */
   position: absolute;
   left: calc(50% - var(--radius));
   top: calc(50% - var(--radius));
@@ -110,6 +109,7 @@ body {
   background: var(--background);
 }
 
+/* This styles the clock hands */
 .sector {
   --width: 1rem;
   position: relative;
@@ -118,6 +118,7 @@ body {
   width: var(--width);
 }
 
+/* Each selector targets a hand type and the styles are for the length and color of the targeted hand */
 .second-hand > .sector {
   height: 40%;
   background: var(--color-second-hand);
@@ -131,6 +132,7 @@ body {
   background: var(--color-hour-hand);
 }
 
+/* The small circle at the center of the clock that overlays the hands */
 .inner-circle {
   --radius: 1%;
   position: absolute;
